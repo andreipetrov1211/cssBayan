@@ -1,0 +1,15 @@
+.accordeon {
+    width: 40%;
+    margin: 50px auto;
+
+}
+.accordeon-item {
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-right: none;
+    border-left: none;
+}
+.accordeon-label {
+    font-size: 24px;
+    font-weight: bold;
+}
