@@ -8,8 +8,26 @@
     border: 1px solid grey;
     border-right: none;
     border-left: none;
+    border-bottom: none;
+}
+.accordeon-item:last-child {
+    border-bottom: 1px solid grey;
 }
 .accordeon-label {
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
     font-size: 24px;
     font-weight: bold;
+}
+.accordeon-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.accordeon-image {
+    display: none;
+}
+.accordeon-input:checked ~ .accordeon-image {
+    display: block;
 }
