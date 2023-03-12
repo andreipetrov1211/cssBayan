@@ -1,35 +1,103 @@
+.h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
 .accordeon {
     width: 40%;
-    margin: 50px auto;
+    margin: 5rem auto;
 
 }
 .accordeon-item {
-    margin-bottom: 15px;
-    border: 1px solid grey;
+    margin-bottom: 1.5rem;
+    border: 0.1rem solid grey;
     border-right: none;
     border-left: none;
     border-bottom: none;
 }
 .accordeon-item:last-child {
-    border-bottom: 1px solid grey;
+    border-bottom: 0.1rem solid grey;
 }
 .accordeon-label {
     display: block;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
+
 .accordeon-input {
-    position: absolute;
+    position: static;
     width: 0;
     height: 0;
 }
 .accordeon-image {
+    display: block;
+    max-width: 100%;
     height: 0;
     overflow: hidden;
     transition: height .5s;
 }
 .accordeon-input:checked ~ .accordeon-image {
-    height: 400px;
+    height: 25rem;
 }
+
+@media (min-width: 320px) and (max-width: 540px){
+	.accordeon {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+   
+    .accordeon-item:last-child {
+        border-bottom: 0.1rem solid grey;
+    }
+    .accordeon-label {
+        padding: 0;
+        font-size: 1rem;
+    }
+    
+    @media (min-width: 1600px) and (max-width: 1920px){
+        .accordeon {
+            width: 50%;
+            margin: 2rem auto;
+        }
+        .accordeon-item {
+            width: 80%;
+        }
+    
+        .h1 {
+            font-size: 4rem;
+        }
+       
+        .accordeon-item:last-child {
+            border-bottom: 0.1rem solid grey;
+        }
+        .accordeon-label {
+            padding: 0;
+            font-size: 2rem;
+        }
+        @media (min-width: 541px) and (max-width: 841px){
+            .accordeon {
+                width: 90%;
+                margin: 2rem auto;
+            }
+            .accordeon-item {
+                width: 80%;
+            }
+        
+            .h1 {
+                font-size: 2.5rem;
+            }
+           
+            .accordeon-item:last-child {
+                border-bottom: 0.1rem solid grey;
+            }
+            .accordeon-label {
+                padding: 0;
+                font-size: 1rem;
+            }
+            
